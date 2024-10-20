@@ -116,12 +116,11 @@ body {
 }
 
 .card__button {
-  display: block;
   width: 100%;
-  background-color: var(--Grey-700);
-  border-style: none;
-  border-radius: .5rem;
   margin: 1rem auto 1rem;
+  border-radius: .5rem;
+  text-align: center;
+  background-color: var(--Grey-700);
   transition: background-color 200ms;
 }
 
