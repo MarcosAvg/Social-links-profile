@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter-VariableFont_slntwght.ttf) format("truetype");
+}
+
+:root {
+  /* ----- Custom propierties----- */
+  /* Colors */
+  --green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+
+  /* Fonts */
+  --primary-font: "Inter", sans-serif;
+}
+
+/* ----- Reset ----- */
+html {
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+  background-color: var(--Grey-900);
+}
+
+/* ----- Components ----- */
+.main {
+  padding: 0 1rem;
+}
+.card {
+  border-radius: .75rem;
+  background-color: var(--Grey-800);
+  padding: .5rem;
+}
+
+.card__header {
+  text-align: center;
+  color: var(--White);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.card__avatar {
+  max-width: 6rem;
+  margin: 0 auto;
+}
+
+.card__avatar > img{
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.card__personal-info {
+  padding-bottom: 2rem;
+}
+
+.card__name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+.card__address {
+  font-size: .875rem;
+  font-weight: bold;
+  color: var(--green);
+}
+
+.card__body {
+  padding: 0 .875rem .5rem;
+}
+
+.card__button {
+  display: block;
+  width: 100%;
+  background-color: var(--Grey-700);
+  border-style: none;
+  border-radius: .5rem;
+  margin: 1rem auto 1rem;
+  transition: background-color 200ms;
+}
+
+.card__button:hover{
+  background-color: var(--green);
+  cursor: pointer;
+}
+
+.card__link {
+  display: block;
+  padding: .875rem;
+  font-weight: bold;
+  color: var(--White);
+  text-decoration: none;
+  transform: color 200ms;
+}
+
+.card__button:hover .card__link {
+  color: var(--Grey-900);
+}
+
+/* ----- Site styles ----- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--White);
+}
+.attribution a {
+  color: rgba(62, 82, 163, 1);
+}
